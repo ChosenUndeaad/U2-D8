@@ -13,13 +13,3 @@
     border: none;
     cursor: pointer;
   }
-
-@mixin generate-spacing-classes($property, $directions) {
-    @each $size, $value in $spacings {
-      @each $direction in $directions {
-        .#{$property}-#{$direction}-#{$size} {
-          #{$property}-#{$direction}: $value;
-        }
-      }
-    }
-  }
