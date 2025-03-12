@@ -1,3 +1,10 @@
+$font-primary: 'Arial', sans-serif;
+
+$font-size-small: 12px;
+$font-size-medium: 16px;
+$font-size-large: 24px;
+$font-size-title-big: 32px;
+
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: $font-primary;
 }
