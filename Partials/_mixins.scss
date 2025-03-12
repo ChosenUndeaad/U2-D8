@@ -2,8 +2,24 @@
     font-size: $font-size-title-big;
     font-weight: bold;
     text-transform: uppercase;
-}
+  }
+  
+  @mixin button-style($bg-color) {
+    background-color: $bg-color;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
 
-h1 {
-    @include title-big;
+@mixin generate-spacing-classes($property, $directions) {
+    @each $size, $value in $spacings {
+      @each $direction in $directions {
+        .#{$property}-#{$direction}-#{$size} {
+          #{$property}-#{$direction}: $value;
+        }
+      }
+    }
   }
