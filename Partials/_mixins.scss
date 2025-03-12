@@ -13,3 +13,5 @@
     border: none;
     cursor: pointer;
   }
+
+  @include button-style(.blue)
