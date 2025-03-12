@@ -1,8 +1,34 @@
 $sizes: (
   sm: 0.5em,
   normal: 1em,
-  md: 1.5em,
-  lg: 2em,
-  xl: 3em,
-  xxl: 4em
+  md: 2em,
+  lg: 4em,
+  xl: 6em,
+  xxl: 8em,
 );
+
+@each $label, $value in $sizes {
+  // Padding block
+  .p-block-#{$label} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  // Padding inline
+  .p-inline-#{$label} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  // Margin block
+  .m-block-#{$label} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  // Margin inline
+  .m-inline-#{$label} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+}

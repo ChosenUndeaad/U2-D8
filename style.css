@@ -2,87 +2,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -92,17 +24,8 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -110,20 +33,16 @@ body {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -141,24 +60,202 @@ body {
   background-color: #640fc5;
 }
 
-.blue {
-  background-color: #0e6cff;
-}
-
-.orange {
-  background-color: #ff8700;
-}
-
-.green {
-  background-color: #4caf50;
-}
-
 body {
   font-family: "Arial", sans-serif;
+  font-size: 16px;
 }
 
-h1 {
+p {
+  padding: 1em;
+}
+
+.p-block-sm {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.p-inline-sm {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.m-block-sm {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.m-inline-sm {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.p-block-normal {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.p-inline-normal {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.m-block-normal {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.m-inline-normal {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.p-block-md {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.p-inline-md {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.m-block-md {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.m-inline-md {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.p-block-lg {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.p-inline-lg {
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.m-block-lg {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.m-inline-lg {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.p-block-xl {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.p-inline-xl {
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+.m-block-xl {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+.m-inline-xl {
+  margin-left: 6em;
+  margin-right: 6em;
+}
+
+.p-block-xxl {
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+
+.p-inline-xxl {
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+.m-block-xxl {
+  margin-top: 8em;
+  margin-bottom: 8em;
+}
+
+.m-inline-xxl {
+  margin-left: 8em;
+  margin-right: 8em;
+}
+
+.button-primary {
+  background-color: #0e6cff;
+  margin: 1em;
+  padding: 1em;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background-color: #ff8700;
+  margin: 1em;
+  padding: 1em;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-tertiary {
+  background-color: #4caf50;
+  margin: 1em;
+  padding: 1em;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title-big {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-} /*# sourceMappingURL=style.css.map */
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid > div {
+  width: 33.3333333333;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

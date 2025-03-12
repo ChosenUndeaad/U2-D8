@@ -1,4 +1,4 @@
-$font-primary: 'Arial', sans-serif;
+$font-primary: "Arial", sans-serif;
 
 $font-size-small: 12px;
 $font-size-medium: 16px;
@@ -7,4 +7,9 @@ $font-size-title-big: 32px;
 
 body {
   font-family: $font-primary;
+  font-size: $font-size-medium;
+}
+
+p {
+  padding: 1em;
 }

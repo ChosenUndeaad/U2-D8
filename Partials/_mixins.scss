@@ -1,17 +1,32 @@
 @mixin title-big {
-    font-size: $font-size-title-big;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  @mixin button-style($bg-color) {
-    background-color: $bg-color;
-    padding: 10px 15px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-  }
+  font-size: $font-size-title-big;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
-  @include button-style(.blue)
+.title-big {
+  @include title-big;
+}
+
+@mixin grid($amountPerLine) {
+  display: flex;
+  flex-wrap: wrap;
+  //width di figlio della griglia
+  & > div {
+    width: 100 / $amountPerLine;
+  }
+}
+
+.grid {
+  @include grid(3);
+}
+
+@mixin centered {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.centered {
+  @include centered;
+}
